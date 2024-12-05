@@ -30,9 +30,16 @@ const config = defineConfig({
                 exclude: [/node_modules/u],
                 loader: "builtin:swc-loader",
                 options: {
+                    // Ref: https://github.com/lit/lit/issues/4580#issuecomment-1996733777
                     jsc: {
                         parser: {
-                            syntax: "typescript"
+                            syntax: "typescript",
+                            decorators: true
+                        },
+                        keepClassNames: true,
+                        transform: {
+                            legacyDecorator: true,
+                            useDefineForClassFields: false
                         }
                     }
                 },
