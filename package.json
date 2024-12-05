@@ -1,0 +1,36 @@
+{
+    "name": "x-search-tool",
+    "version": "0.0.0",
+    "description": "Web-based GUI for creating advanced search commands for X (formerly Twitter).",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+        "format": "prettier --write ./src/**",
+        "format:check": "prettier --check ./src/**",
+        "lint": "eslint ./src/**/*.ts",
+        "build": "npx cross-env NODE_OPTIONS=--experimental-transform-types NODE_ENV=production npx rspack build",
+        "dev": "cross-env NODE_OPTIONS=--experimental-transform-types NODE_ENV=development rspack serve"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Robot-Inventor/x-search-tool.git"
+    },
+    "author": "Robot-Inventor",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/Robot-Inventor/x-search-tool/issues"
+    },
+    "homepage": "https://github.com/Robot-Inventor/x-search-tool#readme",
+    "devDependencies": {
+        "@robot-inventor/eslint-config": "^6.0.15",
+        "@robot-inventor/tsconfig-base": "^4.0.0",
+        "@rspack/cli": "^1.1.5",
+        "@rspack/core": "^1.1.5",
+        "cross-env": "^7.0.3",
+        "css-loader": "^7.1.2",
+        "eslint": "^9.16.0",
+        "fork-ts-checker-webpack-plugin": "^9.0.2",
+        "prettier": "^3.4.2",
+        "typescript": "^5.7.2"
+    }
+}
