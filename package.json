@@ -22,7 +22,7 @@
     },
     "homepage": "https://github.com/Robot-Inventor/x-search-tool#readme",
     "devDependencies": {
-        "@robot-inventor/eslint-config": "^6.0.15",
+        "@robot-inventor/eslint-config": "^7.0.0",
         "@robot-inventor/tsconfig-base": "^5.0.0",
         "@rspack/cli": "^1.1.5",
         "@rspack/core": "^1.1.5",
