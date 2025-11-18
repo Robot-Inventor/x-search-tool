@@ -24,7 +24,7 @@
     "devDependencies": {
         "@robot-inventor/eslint-config": "^8.0.0",
         "@robot-inventor/tsconfig-base": "^5.0.0",
-        "@rspack/cli": "^1.1.5",
+        "@rspack/cli": "^1.6.3",
         "@rspack/core": "^1.1.5",
         "cross-env": "^7.0.3",
         "css-loader": "^7.1.2",
